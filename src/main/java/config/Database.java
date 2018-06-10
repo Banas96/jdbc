@@ -9,7 +9,7 @@ public class Database {
     // httpa//github.com/Banas96
     // jdbc:mysql: //localhost:3306/java_app
 
-    private final static String URL = "jdbc:mysql: //localhost:3306/java_app";
+    private final static String URL = "jdbc:mysql://localhost:3306/java_app";
     private final static String USER = "root";
     private final static String PASSWORD = "root";
 
@@ -25,7 +25,7 @@ public class Database {
     }
     public Connection getConnection() throws SQLException {
         if(connection == null) {
-            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            connection = DriverManager.getConnection(URL, USER, PASSWORD);
         }
         return connection;
     }
